@@ -53,3 +53,37 @@ The script outputs two tables:
     * **Lift > 1**: The features appear together *more often* than expected by chance. This indicates a positive correlation.
     * **Lift = 1**: The features are independent. There is no correlation.
     * **Lift < 1**: The features appear together *less often* than expected. This indicates a negative correlation (the presence of one makes the other less likely).
+
+## Results
+This is an example of a possible results:
+--- Alien Affinity Analysis Setup ---
+Enter the number of records (default: 5000):
+Enter the number of features (default: 6):
+-----------------------------------
+
+--- Attempt #1: Generating and Analyzing Dataset ---
+Dataset with 5000 records and 6 features created.
+Success! Found 2 rule(s) in attempt #1.
+
+--- FINAL ANALYSIS RESULTS ---
+Filtered Rules (Support > 30% AND Confidence > 70%):
+----------------------------------------------------------------------------------------------------
+Rule                                          Support (%)     Confidence (%)     Lift
+====================================================================================================
+Is Green -> Has Tentacles                     41.72           70.21              1.00
+Bioluminescent -> Has Tentacles               39.26           70.18              1.00
+----------------------------------------------------------------------------------------------------
+Total rules found: 2
+
+
+All combinations from popular itemsets (for reference):
+----------------------------------------------------------------------------------------------------
+Rule                                          Support (%)     Confidence (%)     Lift
+====================================================================================================
+Has Tentacles -> Is Green                     41.72           59.18              1.00
+Is Green -> Has Tentacles                     41.72           70.21              1.00
+Has Tentacles -> Bioluminescent               39.26           55.69              1.00
+Bioluminescent -> Has Tentacles               39.26           70.18              1.00
+Is Green -> Bioluminescent                    33.34           56.11              1.00
+Bioluminescent -> Is Green                    33.34           59.60              1.00
+----------------------------------------------------------------------------------------------------
