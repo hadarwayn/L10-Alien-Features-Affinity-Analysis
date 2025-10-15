@@ -1,0 +1,57 @@
+{
+  "project": "Alien Features Affinity Analysis",
+  "description": "Generate a user-configurable synthetic alien dataset and perform affinity analysis to discover feature relationships, guaranteeing at least one valid rule is found.",
+  "version": "2.0",
+  "tasks": [
+    {
+      "task_id": 1,
+      "title": "Generate Alien Dataset",
+      "status": "Updated"
+    },
+    {
+      "task_id": 2,
+      "title": "Implement Core Affinity Metrics",
+      "status": "Completed"
+    },
+    {
+      "task_id": 3,
+      "title": "Generate Feature Combinations",
+      "status": "Completed"
+    },
+    {
+      "task_id": 4,
+      "title": "Apply Affinity Analysis",
+      "status": "Updated"
+    },
+    {
+      "task_id": 5,
+      "title": "Display and Analyze Results",
+      "status": "Completed"
+    },
+    {
+      "task_id": 6,
+      "title": "Enhance Script Interactivity and Robustness",
+      "description": "Add features to make the script more flexible for the user and guarantee a meaningful result.",
+      "priority": "High",
+      "status": "Completed",
+      "subtasks": [
+        {
+          "subtask_id": 6.1,
+          "description": "Implement user prompt for number of records (rows)"
+        },
+        {
+          "subtask_id": 6.2,
+          "description": "Implement user prompt for number of features (columns)"
+        },
+        {
+          "subtask_id": 6.3,
+          "description": "Implement dynamic generation of feature names and probabilities for custom feature counts"
+        },
+        {
+          "subtask_id": 6.4,
+          "description": "Wrap generation and analysis in a loop to ensure at least one rule meets the Support/Confidence criteria"
+        }
+      ]
+    }
+  ]
+}
